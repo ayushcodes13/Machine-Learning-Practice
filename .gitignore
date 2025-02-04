@@ -2,6 +2,6 @@ myenv/
 .DS_Store
 Ecommerce Customers.csv
 cancer.csv
-Titanic-Dataset.csv
+titanic.csv
 churn.csv
 diabetes.csv
