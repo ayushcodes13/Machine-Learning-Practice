@@ -6,7 +6,10 @@ def __init__(self, n_iters = 1000, lr = 0.001):
     self.bias = bias
     self.weights = weights
     
-def 
+def fit(self,X,y):
+    n_samples, n_features = X.shape
+    self.weights = np.zeros(n_features)
+    self.bias = 0
 
 
 def predict():
