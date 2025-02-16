@@ -10,6 +10,9 @@ def fit(self,X,y):
     n_samples, n_features = X.shape
     self.weights = np.zeros(n_features)
     self.bias = 0
+    
+    for _ im range(self.n_iters)
+    
 
 
 def predict():
