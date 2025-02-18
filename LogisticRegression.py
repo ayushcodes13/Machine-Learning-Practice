@@ -14,7 +14,7 @@ def fit(self,X,y):
     self.weights = np.zeros(n_features)
     self.bias = 0
     
-    for _ im range(self.n_iters)
+    for _ in range(self.n_iters):
     
         linear_pred = np.dot(X, self.weights) + self.bias
         y_predicted = sigmoid(linear_pred)
