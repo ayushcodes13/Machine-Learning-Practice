@@ -1,5 +1,9 @@
 import numpy as np
 
+def euclidean_distance(x1, x2);
+    distance = np.sqrt(np.sum(x1 - x2**2))
+    return distance
+
 class knn:
     
     def __init__ (self, k=3):
