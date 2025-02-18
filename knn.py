@@ -26,4 +26,10 @@ class knn:
         #step1 - calculate the distances using euclidean distance
         distances = [euclidean_distance(X, x_train) for x_train in self.X_train]
         
+        #step2 - get the k nearest neighbors
+        k_indices = np.argsort(distances)[:self.k]
+        
+        #step3 - get the target values of the k nearest neighbors
+        k_nearest_labels = [self.y_train[i] for i in k_indices]
+        
         
