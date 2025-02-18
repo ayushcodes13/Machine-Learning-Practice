@@ -19,7 +19,7 @@ class LogisticRegression:
         for _ in range(self.n_iters):
         
             linear_pred = np.dot(X, self.weights) + self.bias
-            y_predicted = sigmoid(linear_pred)
+            y_predicted = self.sigmoid(linear_pred)
 
             dw = (1/n_samples) * np.dot(X.T, (y_predicted-y))
             db = (1/n_samples) * np.sum(y_predicted-y)
@@ -27,7 +27,7 @@ class LogisticRegression:
             self.weights = self.weights - self.lr * dw
             self.bias = self.bias - self.lr * db
 
-    def predict():
+    def predict(self, X):
         linear_pred = np.dot(X, self.weights) + self.bias
         y_predicted = self.sigmoid(linear_pred)
         class_pred = [0 if y<0.5 else 1 for y in y_predicted]
