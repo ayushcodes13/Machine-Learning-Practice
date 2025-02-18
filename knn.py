@@ -2,37 +2,31 @@ import numpy as np
 from collections import Counter
 
 def euclidean_distance(x1, x2):
-    distance = np.sqrt(np.sum(x1 - x2**2))
-    return distance
+    return np.sqrt(np.sum((x1 - x2) ** 2))
 
 class knn:
     
-    def __init__ (self, k=3):
-        self.k = k
-        #k refers to the number of points we have to consider nearby
+    def __init__(self, k=3):
+        self.k = k  # k refers to the number of points to consider nearby
         
-    def fit(self,X,y):
-        
+    def fit(self, X, y):
         self.X_train = X
         self.y_train = y
     
-    def predict (self,X):
-        #this function is for all the sum of the predictions
+    def predict(self, X):
         predictions = [self._predict(x) for x in X]
-        return predictions        
-        
-    def _predict(self,X):
-        #this will calculate the predictions one by one manually
-        
-        #step1 - calculate the distances using euclidean distance
+        return predictions  # ✅ Fixed return statement
+
+    def _predict(self, X):
+        # Step 1 - Calculate distances
         distances = [euclidean_distance(X, x_train) for x_train in self.X_train]
         
-        #step2 - get the k nearest neighbors
+        # Step 2 - Get k nearest neighbors
         k_indices = np.argsort(distances)[:self.k]
         
-        #step3 - get the target values of the k nearest neighbors
+        # Step 3 - Get the labels of the k nearest neighbors
         k_nearest_labels = [self.y_train[i] for i in k_indices]
         
-        #step4 - get the target values of the k nearest neighbors
-        Counter(k_nearest_labels).most_common()
-        return most_common
+        # Step 4 - Get the most common label
+        most_common = Counter(k_nearest_labels).most_common(1)  
+        return most_common[0][0]  # ✅ Return the most frequent label
