@@ -33,4 +33,6 @@ class knn:
         #step3 - get the target values of the k nearest neighbors
         k_nearest_labels = [self.y_train[i] for i in k_indices]
         
-        
+        #step4 - get the target values of the k nearest neighbors
+        Counter(k_nearest_labels).most_common()
+        return most_common
