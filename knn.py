@@ -22,4 +22,8 @@ class knn:
         
     def _predict(self,X):
         #this will calculate the predictions one by one manually
+        
         #step1 - calculate the distances using euclidean distance
+        distances = [euclidean_distance(X, x_train) for x_train in self.X_train]
+        
+        
