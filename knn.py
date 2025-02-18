@@ -1,7 +1,7 @@
 import numpy as np
-from Collections import counter
+from collections import Counter
 
-def euclidean_distance(x1, x2);
+def euclidean_distance(x1, x2):
     distance = np.sqrt(np.sum(x1 - x2**2))
     return distance
 
@@ -19,7 +19,7 @@ class knn:
     def predict (self,X):
         #this function is for all the sum of the predictions
         predictions = [self._predict(x) for x in X]
-        return predict        
+        return predictions        
         
     def _predict(self,X):
         #this will calculate the predictions one by one manually
