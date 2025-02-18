@@ -1,4 +1,5 @@
 import numpy as np
+from Collections import counter
 
 def euclidean_distance(x1, x2);
     distance = np.sqrt(np.sum(x1 - x2**2))
