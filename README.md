@@ -1,2 +1,2 @@
 # Scratch
-practice
+PRACTICE
