@@ -1,2 +1,2 @@
 # Supervised Learning
-practice set
+Supervised learning pracrtice codes are being placed here.
