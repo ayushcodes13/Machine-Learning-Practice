@@ -1,4 +1,3 @@
 # ensemble-learning
-(practice)
-
+Practice set for Machine Learning
 
