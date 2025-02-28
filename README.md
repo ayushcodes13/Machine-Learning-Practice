@@ -6,7 +6,6 @@ This repository consolidates various **Machine Learning** projects, covering key
 ## 📁 Repository Structure
 ```
 Machine-Learning-Practice/
-│── NLP/                          # Natural Language Processing projects
 │── Regression-and-SVM-Models/    # Regression models & SVM implementations
 │── Scratch/                      # ML algorithms implemented from scratch
 │── ensemble-learning/            # Ensemble learning techniques
@@ -16,7 +15,6 @@ Machine-Learning-Practice/
 ```
 
 ## 📚 Included Topics
-✅ **Natural Language Processing (NLP):** Tokenization, Stopwords, Stemming, Lemmatization, Named Entity Recognition (NER), POS Tagging
 
 ✅ **Regression Models:** Linear Regression, Lasso, Ridge, ElasticNet, Logistic Regression
 
