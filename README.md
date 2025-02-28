@@ -13,7 +13,6 @@ Machine-Learning-Practice/
 │── EDA/                          # Exploratory Data Analysis projects
 │── clustering-and-anomaly-detection/ # Clustering & anomaly detection models
 │── README.md                     # Project documentation (this file)
-│── .gitignore                     # Files to be ignored in Git
 ```
 
 ## 📚 Included Topics
