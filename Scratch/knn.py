@@ -15,7 +15,7 @@ class knn:
     
     def predict(self, X):
         predictions = [self._predict(x) for x in X]
-        return predictions  # ✅ Fixed return statement
+        return predictions  
 
     def _predict(self, X):
         # Step 1 - Calculate distances
@@ -29,4 +29,4 @@ class knn:
         
         # Step 4 - Get the most common label
         most_common = Counter(k_nearest_labels).most_common(1)  
-        return most_common[0][0]  # ✅ Return the most frequent label
+        return most_common[0][0]  
