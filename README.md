@@ -36,15 +36,15 @@ To use this repository, follow these steps:
 ```sh
 git clone https://github.com/ayushcodes13/Machine-Learning-Practice.git
 cd Machine-Learning-Practice
-pip install -r requirements.txt  # If a requirements.txt is added
+pip install -r requirements.txt 
 ```
 
 ## 🚀 How to Run
 Each project has its own Jupyter Notebook (`.ipynb`) or Python script (`.py`). You can run them using:
 
 ```sh
-jupyter notebook  # To launch Jupyter
-python script.py  # To run Python scripts
+jupyter notebook  
+python script.py  
 ```
 
 ## 📌 Contribution Guidelines
