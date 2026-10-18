@@ -47,6 +47,12 @@ jupyter notebook
 python script.py  
 ```
 
+## Deployment and runtime
+
+This repository is a collection of Jupyter notebooks and Python scripts, not a web application. No Vercel deployment is configured; Vercel could serve documentation or static artifacts, but it would not run the notebooks or their data/model workflows.
+
+Use a local Python environment with Jupyter Notebook or JupyterLab, following the dependencies and dataset requirements for the individual project you want to run. Compute and storage needs vary by notebook. If a particular experiment later gains a web interface, deploy that interface separately and keep model execution and data access in a runtime designed for that experiment. No hosted notebook, dataset service, or inference API is provided by this repository.
+
 ## 📌 Contribution Guidelines
 Contributions are welcome! If you want to add new ML projects or improve existing ones:
 1. **Fork** the repository
